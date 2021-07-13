@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class PartidadeFutebol {
+public class CondPartidadeFutebol2 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -23,23 +23,23 @@ public class PartidadeFutebol {
 			else  {
 				dif = bangu - madureira;	
 		}	
-		
-		
-		System.out.println("DIFERENÇA: "+dif);
-		
-		
-			if (dif == 0) {
-			System.out.println("PARTIDA EMPATADA");
-		}
-				else if (dif >=1 && dif <=3) {
-				System.out.println("PARTIDA NORMAL");
-		}		
-					else if (dif > 5) {
-					System.out.println("GOLEADA");
-		}			
 					
-						
-				
+		System.out.println("DIFERENÇA: "+dif);
+					
+		
+		switch (dif) {
+		case 0:
+			System.out.println("PARTIDA EMPATADA");
+			break;
+		case 1:	case 2: case 3:
+			System.out.println("PARTIDA NORMAL");
+			break;
+		default:
+			System.out.println("GOLEADA");
+		}
+		
+			
+		
 		sc.close();
 	}
 

@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class NumeroPrimo {
+public class RepNumeroPrimo {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

@@ -2,7 +2,7 @@ package curso_programacao;
 
 import java.util.Locale;
 
-public class Exercicios {
+public class Z0Exercicios {
 
 	public static void main(String[] args) {
 		

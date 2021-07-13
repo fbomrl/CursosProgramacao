@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class VelocidadeCarro {
+public class CondVelocidadeCarro {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

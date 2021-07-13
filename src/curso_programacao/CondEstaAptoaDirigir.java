@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class EstaAptoaDirigir {
+public class CondEstaAptoaDirigir {
 
 	public static void main(String[] args) {
 				

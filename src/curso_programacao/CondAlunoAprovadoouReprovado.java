@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class AlunoAprovadoouReprovado {
+public class CondAlunoAprovadoouReprovado {
 
 	public static void main(String[] args) {
 		

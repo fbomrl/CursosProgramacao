@@ -2,7 +2,7 @@ package curso_programacao;
 
 import java.util.Scanner;
 
-public class Teste {
+public class CondHoras {
 
 	public static void main(String[] args) {
 		

@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class EstaAptoaDirigir2 {
+public class CondEstaAptoaDirigir2 {
 
 	public static void main(String[] args) {
 				
