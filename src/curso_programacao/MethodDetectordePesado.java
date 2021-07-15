@@ -30,13 +30,10 @@ public class MethodDetectordePesado {
 	}
 
 	private static void topo(double maior) {
-
 		System.out.println("----------------------------------");
 		System.out.println("       DETECTOR DE PESADO         ");
 		System.out.println("Maior peso até agora: " + maior + " Kg");
 		System.out.println("----------------------------------");
-
-
 	}
 
 }
