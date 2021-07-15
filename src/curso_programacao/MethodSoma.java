@@ -5,6 +5,7 @@ public class MethodSoma {
 
 	static void soma (int a, int b) {
 		int s = a + b ;
+	
 		System.out.println("A soma é "+s);
 	
 	}
