@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class MethodParImpar {
 
 	static void parimpar(int valor) {
+		
 		if (valor % 2 == 0) {
-			System.out.println("O número " + valor + " é PAR");
+			System.out.println("O número " + valor + " é PAR.");
 		} else {
-			System.out.println("O número " + valor + " é IMPAR");
+			System.out.println("O número " + valor + " é IMPAR.");
 		}
 
 	}
