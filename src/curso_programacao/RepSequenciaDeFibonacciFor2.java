@@ -4,30 +4,22 @@ import java.util.Scanner;
 
 public class RepSequenciaDeFibonacciFor2 {
 	
-	static int contador = 0;
-	static int natual = 1;
-	static int nanterior = 0;
-	int nint;
-	
-	static void proximoFibonacci(int a, int b) {
-		int c;
-		c = (a + b);
-		System.out.println(c);
-		nanterior = b;
-		natual = c;	
-		
-	}
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
+		int contador = 0, natual = 1, nanterior = 1, nint = 1;
 
-		System.out.println(nanterior);
-		System.out.println(natual);
-		
-		for (contador = 3; contador <= 10; contador++) {
-			proximoFibonacci(nanterior, natual);
-		
+		for (contador = 1; contador <= 15; contador++) {
+
+			if (contador <= 1) {
+				natual = 0;
+			} else if (contador >= 2) {
+				nanterior = nint;
+				nint = natual;
+				natual = natual + nanterior;
+
+			}
+			System.out.println(natual);
 		}
 
 		sc.close();

@@ -19,7 +19,7 @@ public class Z3 {
 	
 	System.out.println("Diferença = " + Diferenca);
 	
-	CondCalculoTriangulo2.verificarSeTriangulo(A, B, C);
+	
 	
 	
 	

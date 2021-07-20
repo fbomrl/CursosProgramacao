@@ -1,29 +1,27 @@
 package curso_programacao;
 
-import java.util.Scanner;
-
 public class MethodSequenciaDeFibonacci {
 
+	static int i, t1 = 0, t2 = 1, t3;
+
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 
-		int contador = 0, natual = 1, nanterior = 1, nint = 1;
-
-		for (contador = 1; contador <= 15; contador++) {
-
-			if (contador <= 1) {
-				natual = 0;
-			} else if (contador >= 2) {
-				nanterior = nint;
-				nint = natual;
-				natual = natual + nanterior;
-
-			}
-			System.out.println(natual);
+		System.out.println(t1);
+		System.out.println(t2);
+		for (i = 3; i <= 10; i++) {
+			t3 = proximoFibonacci(t1, t2);
+			System.out.println(t3);
 		}
-
-		sc.close();
 
 	}
 
+	static int proximoFibonacci(int a, int b) {
+		t3 = a + b;
+		a = b;
+		b = t3;
+		t1 = a;
+		t2 = b;
+
+		return t3;
+	}
 }

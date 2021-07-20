@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MethodParImpar2 {
 
 	
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int numero;
 		String R="";
@@ -20,10 +20,10 @@ public class MethodParImpar2 {
 	}
 	
 	
-	static String parimpar(int valor) {
+	static String parimpar(int numero) {
 		String PAR = "", IMPAR = "";
 		
-		if (valor % 2 == 0) {
+		if (numero % 2 == 0) {
 		return PAR;
 		}
 	
