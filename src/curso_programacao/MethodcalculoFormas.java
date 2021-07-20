@@ -17,39 +17,45 @@ public class MethodcalculoFormas {
 		B = sc.nextDouble();
 		System.out.println("Digite o terceiro valor: ");
 		C = sc.nextDouble();
-		
-		tri = triangulo(A,B,C);
-		System.out.println("TRIANGULO: "+tri);
-		circ = circulo(A,B,C);
-		System.out.println("CIRCULO: "+circ);
-		trap = trapezio(A,B,C);
-		System.out.println("TRAPÉZIO: "+trap);
-		quad = quadrado(A,B,C);
-		System.out.println("QUADRADO: "+quad);
-		retan = retangulo(A,B,C);
-		System.out.println("RETANGULO: "+retan);
-		
+
+		tri = triangulo(A, C);
+		MethodCalculoTriangulo.verificarSeTriangulo(A, B, C);
+		System.out.println("ÁREA DO TRIÂNGULO: " + tri);
+		MethodCalculoTriangulo.verificarLadosTriangulo(A, B, C);
+		circ = circulo(C);
+		System.out.println("ÁREA DO CIRCULO: " + circ);
+		trap = trapezio(A, B, C);
+		System.out.println("ÁREA DO TRAPÉZIO: " + trap);
+		quad = quadrado(B);
+		System.out.println("ÁREA DO QUADRADO: " + quad);
+		retan = retangulo(A, B);
+		System.out.println("ÁREA DO RETANGULO: " + retan);
 
 		sc.close();
 	}
-	public static Double triangulo(Double A, Double B, Double C) {
-	
-	return A*C/2.0;	
+
+	public static Double triangulo(Double A, Double C) {
+
+		return A * C / 2.0;
 	}
-	public static Double circulo(Double A, Double B, Double C) {
-		
-	return 3.14159 * C * C;
+
+	public static Double circulo(Double C) {
+
+		return 3.14159 * C * C;
 	}
+
 	public static Double trapezio(Double A, Double B, Double C) {
-		
-	return (A + B) / 2.0 * C;
+
+		return (A + B) / 2.0 * C;
 	}
-	public static Double quadrado(Double A, Double B, Double C) {
-		
-	return B*B;
+
+	public static Double quadrado(Double B) {
+
+		return B * B;
 	}
-	public static Double retangulo(Double A, Double B, Double C) {
-		
-	return A*B;
+
+	public static Double retangulo(Double A, Double B) {
+
+		return A * B;
 	}
 }
