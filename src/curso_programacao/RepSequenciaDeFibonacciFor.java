@@ -1,11 +1,11 @@
 package curso_programacao;
 
-import java.util.Scanner;
+
 
 public class RepSequenciaDeFibonacciFor {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+
 
 		int contador = 0, natual = 1, nanterior = 1, nint = 1;
 
@@ -22,7 +22,7 @@ public class RepSequenciaDeFibonacciFor {
 			System.out.println(natual);
 		}
 
-		sc.close();
+
 
 	}
 
