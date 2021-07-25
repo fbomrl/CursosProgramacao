@@ -1,25 +1,25 @@
-Algoritmo "OrdenaVetor"
-
-Var
-   vet: vetor[1..4] de Inteiro
-   i, j, aux: inteiro
-Inicio
-   Para i <- ate 4 faca
-      Escreva ("Digite um valor: ")
+algoritmo "OrdenaVetor"
+var
+   vet: vetor [1..10] de inteiro
+   i,j,aux: inteiro
+inicio
+   para i <- 1 ate 10 faca
+      escreva ("Digite um valor: ")
       Leia(vet[i])
-   FimPara
+   fimpara
 
-   para i <- 1 ate 3 faca
-      para j <- i+1 ate 4 faca
-         se(vet[i]> vet[j]) entao
-            aux <- vet[i]
-            vet[i] <- vet[j]
-            vet[j] <- aux
+   para i <- 1 ate 9 faca
+      para j <- i+1 ate 10 faca
+         se (vet[i] > vet[j]) entao
+            aux <- vet [i]
+            vet [i] <- vet[j]
+            vet [j] <- Aux
          fimse
-      FimPara
-   FimPara
-
-   para i <- ate 4 faca
-      Escreva("(", vet[i] ,")")
-   FimPara
-Fimalgoritmo
+      fimpara
+   fimpara
+   
+      para i <- 1 ate 10 faca
+      escreva ("(", vet[i], ")")
+      fimpara
+   
+fimalgoritmo
