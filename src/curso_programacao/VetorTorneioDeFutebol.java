@@ -8,23 +8,27 @@ public class VetorTorneioDeFutebol {
 		topo();
 		Scanner sc = new Scanner(System.in);
 		String time[] = new String[3];
-		String A= "", B = "", C="";
+		int i=0, c;
 
-		for (int i = 0; i < 3; i++) {
-			System.out.println("Nome do " + (i + 1) + "º time: ");
-			time[i] = sc.next();
-			A = time[i];
-			B = time[i];
-			C = time[i];
-		
+		for (c = 0; c < 3; c++) {
+		System.out.println("Nome do "+(c+1)+" time: ");
+		time[c] = sc.nextLine();
 		}
-		for (int i = 0; i < 3; i++) {
-			
-			
-			
-			System.out.println(time[i] + "[ ] x [ ]" + time[i]);
-	}
-			
+		
+		System.out.println("========================");
+		System.out.println("   TABELA DE PARTIDAS   ");
+		System.out.println("========================");
+		for (i = 0; i < 3; i++) {
+			for (c = 0; c < 3; c++) {
+				if (i != c) {
+					System.out.println(time[i]+"   [ ] x [ ]   "+time[c]);
+					
+				}
+				
+			}
+		}
+		
+
 		sc.close();
 
 	}
