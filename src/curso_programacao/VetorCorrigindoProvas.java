@@ -14,13 +14,14 @@ public class VetorCorrigindoProvas {
 		String nome[] = new String[3];
 		String resposta[] = new String[5];
 		double med = 0, s = 0;
-		int g=0, r=0, i=0;
+		int g=0, r=0;
 
 		for (g = 0; g < 5; g++) {
 			System.out.println("Questão " + (g + 1) + ":");
 			gabarito[g] = sc.nextLine();
 		}
-		for (i = 0; i < 3; i++) {
+		
+		for (int i = 0; i < 3; i++) {
 			System.out.println("===============================");
 			System.out.println("ALUNO " + (i + 1) + ":");
 			System.out.println("===============================");
@@ -39,14 +40,14 @@ public class VetorCorrigindoProvas {
 		s = soma(g, r);
 		System.out.println("          NOTAS FINAIS         ");
 		System.out.println("===============================");
-		System.out.println(nome[i]+"   "+s);
+		System.out.println(nome[0]+"   "+s);
 		System.out.println("===============================");
 		System.out.println("Media da turma: " + med);
 		sc.close();
 	}
 
 	static double media(double r, double g) {
-		if (r == g) {
+		if (g == r) {
 			soma = soma + 2;
 			media = soma / 5;
 		}
