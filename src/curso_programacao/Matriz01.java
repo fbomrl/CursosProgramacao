@@ -13,7 +13,7 @@ public class Matriz01 {
 		// - de todos os elementos da matriz:
 		// - Escreva essas somas e a matriz:
 
-		Scanner in = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		int matriz[][] = new int[5][5];
 		int c = 0, l = 0, l4 = 0, c2 = 0, dp = 0, ds = 0, total = 0;
@@ -21,7 +21,7 @@ public class Matriz01 {
 		for (l = 0; l < 5; l++) {
 			for (c = 0; c < 5; c++) {
 				System.out.println("Insira um valor para a posição (" + (l + 1) + "," + (c + 1) + ")");
-				matriz[l][c] = Integer.parseInt(in.nextLine());
+				matriz[l][c] = Integer.parseInt(sc.nextLine());
 
 				if (l == 3) {
 					l4 += matriz[l][c];
@@ -52,7 +52,7 @@ public class Matriz01 {
 		System.out.println("A soma da Diagonal Secundária é: " + ds);
 		System.out.println("A soma total é: " + total);
 
-		in.close();
+		sc.close();
 	}
 
 }
