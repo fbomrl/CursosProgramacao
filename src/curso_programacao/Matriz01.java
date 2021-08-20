@@ -46,8 +46,8 @@ public class Matriz01 {
 			System.out.println();
 		}
 
-		System.out.println("A linha 4 da Matriz é: " + l4);
-		System.out.println("A coluna 2 da Matriz é: " + c2);
+		System.out.println("A soma da linha 4 da Matriz é: " + l4);
+		System.out.println("A soma da coluna 2 da Matriz é: " + c2);
 		System.out.println("A soma da Diagonal Principal é: " + dp);
 		System.out.println("A soma da Diagonal Secundária é: " + ds);
 		System.out.println("A soma total é: " + total);
