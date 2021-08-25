@@ -22,6 +22,7 @@ public class MatrizJogoDaVelha {
 		opcao = sc.nextInt();
 
 		switch (opcao) {
+
 		case 1:
 			for (linha = 0; linha < 3; linha++) {
 				for (coluna = 0; coluna < 3; coluna++) {
@@ -32,7 +33,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -46,7 +49,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -61,7 +66,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -75,7 +82,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -89,7 +98,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -103,7 +114,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -117,7 +130,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -131,7 +146,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			jogador2(jv);
 
 			break;
@@ -145,6 +162,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 
+			}
+			if (isGameEnded(jv)== true ) {
+				break;
 			}
 			jogador2(jv);
 			break;
@@ -174,6 +194,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 
 			tab(jv);
 
@@ -188,7 +211,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -203,7 +228,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -217,7 +244,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -231,7 +260,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -245,7 +276,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -259,7 +292,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -273,7 +308,9 @@ public class MatrizJogoDaVelha {
 				}
 				System.out.println();
 			}
-
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 
 			break;
@@ -288,6 +325,10 @@ public class MatrizJogoDaVelha {
 				System.out.println();
 
 			}
+
+			if (isGameEnded(jv)== true ) {
+				break;
+			}
 			tab(jv);
 			break;
 
@@ -299,15 +340,105 @@ public class MatrizJogoDaVelha {
 		System.out.println("------------------------------------");
 		System.out.println("--------TABELA JOGO DA VELHA--------");
 		System.out.println("------------------------------------");
+
 		for (linha = 0; linha < 3; linha++) {
 			for (coluna = 0; coluna < 3; coluna++) {
 				System.out.print(jv[linha][coluna] + "   ");
+
 			}
 			System.out.println();
 		}
 		System.out.println("------------------------------------");
 		System.out.println("------------------------------------");
+
 		jogador1(jv);
+
 		return jv;
+	}
+
+	private static Boolean isGameEnded(String jv[][]) {
+		String diagonalPrincipal[][] = {};
+
+		//VERIFICAÇÃO DA DIAGONAL PRINCIPAL
+		if (jv[0][0] == "X" && jv[1][1] == "X" && jv[2][2] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][0] == "O" && jv[1][1] == "O" && jv[2][2] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		
+		//VERIFICAÇÃO DE LINHAS
+		if (jv[0][0] == "X" && jv[0][1] == "X" && jv[0][2] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[1][0] == "X" && jv[1][1] == "X" && jv[1][2] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[2][0] == "X" && jv[2][1] == "X" && jv[2][2] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][0] == "O" && jv[0][1] == "O" && jv[0][2] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[1][0] == "O" && jv[1][1] == "O" && jv[1][2] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[2][0] == "O" && jv[2][1] == "O" && jv[2][2] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		//VERIFICAÇÃO DE COLUNAS
+		if (jv[0][0] == "X" && jv[1][0] == "X" && jv[2][0] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][1] == "X" && jv[1][1] == "X" && jv[2][1] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][2] == "X" && jv[1][2] == "X" && jv[2][2] == "X") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][0] == "O" && jv[1][0] == "O" && jv[2][0] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][1] == "O" && jv[1][1] == "O" && jv[2][1] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		if (jv[0][2] == "O" && jv[1][2] == "O" && jv[2][2] == "O") {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;	
+		}
+		//JOGO SEM RESULTADO!
+/*		if () {
+			System.out.println("------------------------------------");
+			System.out.println("Jogo Encerrado!!!!!!!!!");
+			return true;
+		}*/
+		return false;
 	}
 }
