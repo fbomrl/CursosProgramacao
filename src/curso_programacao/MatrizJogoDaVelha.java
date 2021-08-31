@@ -327,6 +327,7 @@ public class MatrizJogoDaVelha {
 			}
 
 			if (isGameEnded(jv)== true ) {
+				
 				break;
 			}
 			tab(jv);
@@ -357,8 +358,6 @@ public class MatrizJogoDaVelha {
 	}
 
 	private static Boolean isGameEnded(String jv[][]) {
-		String diagonalPrincipal[][] = {};
-
 		//VERIFICAÇÃO DA DIAGONAL PRINCIPAL
 		if (jv[0][0] == "X" && jv[1][1] == "X" && jv[2][2] == "X") {
 			System.out.println("------------------------------------");
