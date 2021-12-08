@@ -1,0 +1,26 @@
+
+DELETE FROM tbproduto WHERE PRODUTO = '1078680';
+
+
+DELETE FROM tbtabela_de_vendedores WHERE MATRICULA = '00233';
+
+ALTER TABLE tbtabela_de_vendedores ADD PRIMARY KEY (MATRICULA);
+
+ALTER TABLE tbtabela_de_vendedores ADD COLUMN (DATA_ADMISSAO DATE);
+
+ALTER TABLE tbtabela_de_vendedores ADD COLUMN (FÉRIAS BIT);
+
+UPDATE tbtabela_de_vendedores SET DATA_ADMISSAO = '2014-08-15', FÉRIAS = 0
+WHERE MATRICULA = '00235';
+
+UPDATE tbtabela_de_vendedores SET DATA_ADMISSAO = '2013-09-17', FÉRIAS = 1, PERCENTUAL_COMISSAO = '0.08'	
+WHERE MATRICULA = '00236';
+
+INSERT INTO tbtabela_de_vendedores(MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, FÉRIAS)
+VALUES ('00237','Roberta Martins','0.11','2017-03-18',1);
+
+INSERT INTO tbtabela_de_vendedores(MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, FÉRIAS)
+VALUES('00238','Péricles Alves','0.11','2016-08-21',0);
+
+SELECT * FROM tbtabela_de_vendedores;
+
