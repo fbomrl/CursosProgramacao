@@ -36,12 +36,28 @@ from cargo as c
 inner join funcionarios as f
 on (f.codigo_cargo = c.codigo_cargo);
 
+use gama;
+-- Tabela de contatos
+create table gama.contatos(id_contatos int not null auto_increment primary key, nome_contatos varchar(40) not null);
+describe gama.contatos; 
+insert into gama.contatos (nome_contatos) value ('Fabio Meireles'), ('Ana Duarte'), ('Ciro Franco'), ('Danilo Trindade'),
+('Eduardo Galvão'), ('Flávia Jesus'), ('Heriton'), ('Ivanildo dias Rocha'), ('Jefferson Augusto'),('Jefferson Menezes'),
+('Patrick Gaspar'), ('Rafael Niccioli'), ('Rosana'), ('Willian Bonaventura'), ('Bruno'), ('Willian Santos');
+
+select * from gama.contatos;
 
 
+-- Atividade Banco de dados
+create table gama.produtos (id_produto int not null auto_increment primary key, nome_produto varchar(20), marca_produto varchar(20),
+Quantidade_produto int, valor_produto decimal(8,2), cod_produto int);
 
+insert into gama.produtos(nome_produto, marca_produto, Quantidade_produto, valor_produto, cod_produto) 
+value ('Smartphone', 'Samsung', 57, 2999.99, 1), ('Smarttv', 'LG', 14, 4999.99,2), ('Liquidificador', 'Mondial', 33, 499.99, 3),
+('Monitor LCD', 'Samsung', 11, 1499.99,1), ('Teclado Gamer', 'Dragons', 117, 199.99,4),
+('Headphone','JBL', 114, 299.99, 5 );
+-- 1º SELECT
+select nome_produto, Quantidade_produto, valor_produto, (Quantidade_produto * valor_produto) as Total from gama.produtos;
 
-
-
-
-
+-- 2º SELECT
+select count(*) as Total, marca_produto  from gama.produtos group by marca_produto;
 
