@@ -11,7 +11,7 @@ public class ChamadaPrincipal {
 			conectar.listaContatos();
 			//conectar.inserirContato("Dragonilda", 45, "drago@gmail");
 			//conectar.editarContato ("Petrolina Dragon", 17,".d@gama.com.br", 80);
-			conectar.deletaContato(17);
+			//conectar.deletaContato(17);
 			System.out.println("Conexão com o banco executada com exito");
 			
 		}else {

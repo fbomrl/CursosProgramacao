@@ -66,7 +66,7 @@ public class BancoDeDados {
 		
 		//criando um método para a inserção de registros
 		
-		public void inserirContato(String nome, int idade, String email) {
+		public void inserirContato(String nome, String idade, String email) {
 			try {
 				//Linha de execução do nosso SQL
 				String query="insert into gama.contatos (nome_contatos, idade, email) values('"+nome+"','"+idade+"','"+email+"');";
@@ -101,6 +101,43 @@ public class BancoDeDados {
 				this.statement.executeUpdate(query);
 			}catch(Exception e) {
 				System.out.println("Erro: "+e.getMessage());
+			}
+		}
+		public void insertProduto(String id, String nome, String marca, String quantidade, String valor, String codigo) {
+			try {
+				//Linha de execução do nosso SQL
+				String query="insert into gama.produtos (id_produto, nome_produto , "
+						+ "marca_produto, Quantidade_produto, valor_produto, cod_produto) values('"+id+"','"+nome+"','"+marca+"','"+quantidade+"','"+valor+"','"+codigo+"');";
+				//Linha para identificar o que iremos montar como String
+				System.out.println(query);
+				this.statement.executeUpdate(query);
+			}catch(Exception e) {
+				System.out.println("Erro: "+e.getLocalizedMessage());
+			}
+			
+		}
+		public void editarProduto(String id, String nome, String marca, String quantidade, String valor, String codigo) {
+			//criar uma linha de exceção
+			try {
+				String query="update gama.produtos set nome_produto='"+nome+"', marca_produto='"+marca+"', Quantidade_produto="+quantidade+
+						", valor_produto="+valor+	" where id_produto="+id+";";
+				//Permite analisar como está sendo montado a sintaxe que será utilizado no banco de dados
+				System.out.println(query);
+				this.statement.executeUpdate(query);
+			}catch(Exception e) {
+				System.out.println("Erro: "+e.getLocalizedMessage());
+			}
+		}	
+		public void pesquisarProuto(String id, String nome, String marca, String quantidade, String valor, String codigo) {
+		
+			try {
+				
+				String query="select '"+id+"'from gama.produtos';";
+	
+				System.out.println(query);
+				this.statement.executeUpdate(query);
+			}catch(Exception e) {
+				System.out.println("Erro: "+e.getLocalizedMessage());
 			}
 		}
 		}

@@ -1,4 +1,4 @@
-select * from gama.contatos;
+
 -- Inclusão de idade e email na tabela contato
 alter table gama.contatos 
 add idade int not null;

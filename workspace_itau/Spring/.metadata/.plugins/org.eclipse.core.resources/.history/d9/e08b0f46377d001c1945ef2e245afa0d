@@ -1,0 +1,19 @@
+package br.com.rabgestaoti.HelloController;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+// tudo que vc digitar com um @ na frente, quer dizer que iremos disponibilizar algum contexto
+//de acesso via web. @ = anotação.
+
+@RestController 
+
+public class HelloController {
+
+//criar uma chamada do nosso método
+	@GetMapping("/teste")
+	public String testHello() {
+		return "Minha primeira página em SpringBoot";
+	}
+
+}
