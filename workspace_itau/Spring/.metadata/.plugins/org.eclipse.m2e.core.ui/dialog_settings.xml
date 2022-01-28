@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\fabio\Documents\CursosProgramacao\workspace_itau\Spring\console"/>
 			<item value="C:\Users\fabio\Desktop\Spring\Meireles"/>
 			<item value="C:\Users\fabio\Desktop\Spring\Hello"/>
 		</list>
@@ -13,5 +14,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

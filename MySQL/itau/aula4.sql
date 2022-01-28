@@ -13,6 +13,8 @@ id_titular integer not null,constraint titular foreign key(id_titular) reference
 
 select * from tbcliente;
 select * from tbconta;
+describe tbcliente;
+describe tbconta;
 
 insert into tbcliente (nome, cpf, telefone, email) values 
 ('Fabio Silva', '111111111-33', '91234-4511', 'fabios@gmail.com'),
@@ -48,5 +50,5 @@ from tbcliente
 inner join tbconta 
 on (tbcliente.id = tbconta.id_titular);
 
-
+select * from clientes;
 
