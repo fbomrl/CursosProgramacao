@@ -1,0 +1,16 @@
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.exe
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.deps.json
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.runtimeconfig.json
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.runtimeconfig.dev.json
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.dll
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\ref\console2.dll
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\bin\Debug\net5.0\console2.pdb
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.csproj.AssemblyReference.cache
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.AssemblyInfoInputs.cache
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.AssemblyInfo.cs
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.dll
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\ref\console2.dll
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.pdb
+C:\Users\fabio\Documents\CursosProgramacao\C#\projetos_dotnet\console2\obj\Debug\net5.0\console2.genruntimeconfig.cache
