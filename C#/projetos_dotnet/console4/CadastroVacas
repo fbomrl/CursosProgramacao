@@ -1,0 +1,36 @@
+namespace console4
+{
+    internal class VacaServico
+    {
+        public static void cadastrar()
+        {
+            Console.WriteLine("Digite a quantidade de vacas");
+            int qntd = 1;
+            string sQtd = Console.ReadLine();
+            if(!int.TryParse(sQtd, out qntd))
+            {
+                Console.Clear();
+                Console.WriteLine("Você digitou a quantidade de vacas inválido, digite somente números");
+                Thread.Sleep(2000);
+                VacaServico.cadastrar();
+                return;
+
+            }
+    for(int i=0;i<qntd;i++){
+        var vaca = new Vaca();
+        Console.WriteLine("Digite o nome da vaca de número "+(i+1));
+        vaca.Nome = Console.ReadLine();
+        Console.WriteLine("Digite a quantidade de leite que a vaca "+vaca.Nome+ "suporta");
+        vaca.qntdLitros = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite a quantidade de leite atual da vaca "+vaca.Nome);
+        vaca.qntdLitrosAtual = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        vacas.add(vaca);
+
+        Console.WriteLine("Vaca cadastrada com sucesso!");
+        Thread.Sleep(2000);
+            }
+        }
+    }
+}

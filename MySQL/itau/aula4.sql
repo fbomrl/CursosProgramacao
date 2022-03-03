@@ -50,5 +50,6 @@ from tbcliente
 inner join tbconta 
 on (tbcliente.id = tbconta.id_titular);
 
-select * from clientes;
+select clientes.Id, clientes.Nome, clientes.Telefone, clientes.Email from clientes inner join contas on (clientes.Id = contas.Id);
+
 
