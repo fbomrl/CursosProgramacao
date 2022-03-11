@@ -14,5 +14,4 @@ export class ParentDataComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
