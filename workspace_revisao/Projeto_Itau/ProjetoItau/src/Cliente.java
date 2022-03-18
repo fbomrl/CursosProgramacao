@@ -1,4 +1,4 @@
-public class Clientes {
+public class Cliente {
 
     private int agencia;
     private int conta;
