@@ -55,6 +55,38 @@ select nome_produto, qntd_produto, valor_unid_produto, ( qntd_produto * valor_un
 -- função sum, permite somar os valores atribuidos, campos a função;
 select sum(qntd_produto * valor_unid_produto) as total_geral from produtos;
 
+describe clientes;
+
+-- Adicionando novos campos na nossa tabela;
+alter table clientes add cpf char(11) not null;
+
+-- Atualizando um registro na nossa tabela;
+select * from clientes where id_cliente = 3;
+select * from clientes where nome_cliente = 'Ciara%';
+update clientes set cpf ="25510855844" where id_cliente = 3;
+update clientes set nome_cliente ='Ciara Harper' where id_cliente  = 3;
+
+-- Modificando campos da nossa tabela;
+	alter table clientes modify email_cliente varchar(60) not null ;
+
+-- Atualizando mais de um campo de registro na nossa tabela;
+update clientes set nome_cliente = 'Paula de Souza', cpf='12345698744' where id_cliente =5;
+
+update clientes set cpf = "Atualizar" where cpf = "";
+
+-- Atualizando nome da planilha
+alter table clientes rename column  cpf to cpf_cliente;
+
+-- Criando um sistema de backup das tabelas;
+create table clientes_bck select * from clientes;
+
+-- Deletando..
+delete from clientes where cpf_cliente='Atualizar';
+
+-- Recuperando registros através de uma tabela de backup 
+insert into clientes
+(id_cliente, nome_cliente, idade_cliente, email_cliente, cpf_cliente)
+select id_cliente, nome_cliente, idade_cliente, email_cliente, cpf_cliente from clientes_bck where cpf_cliente='Atualizar';
 
 
 
