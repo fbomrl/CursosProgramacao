@@ -15,4 +15,5 @@ export class ChangeNumberComponent implements OnInit {
   handleClick() {
     this.changeNumber.emit();  
   }
+  
 }
